@@ -12,15 +12,9 @@
 * Description: SF快速开发平台
 * Website：http://www.mayisite.com
 *********************************************************************************/
-using SF.Entitys.Abstraction.Pages;
-using SF.Core.Abstraction.UoW;
+
 using SF.Core.EFCore.UoW;
 using SF.Entitys;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace SF.Data.Repository
 {

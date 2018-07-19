@@ -1,10 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SF.Core.EFCore.UoW;
 using SF.Entitys.Abstraction;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SF.Data
 {

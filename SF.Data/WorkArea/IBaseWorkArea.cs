@@ -15,10 +15,6 @@
 using SF.Core.Abstraction.UoW;
 using SF.Data.Repository;
 using SF.Entitys;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SF.Data.WorkArea
 {

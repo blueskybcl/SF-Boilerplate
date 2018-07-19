@@ -14,13 +14,8 @@
 *********************************************************************************/
 using SF.Core.EFCore.UoW;
 using SF.Data.WorkArea;
-using SF.Core.Interceptors;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using SF.Core.Abstraction.Interceptors;
-using Microsoft.EntityFrameworkCore;
 
 namespace SF.Data
 {

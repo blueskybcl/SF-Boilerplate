@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using SF.Data;
 using SF.Entitys;
 
 namespace SF.Data.Identity

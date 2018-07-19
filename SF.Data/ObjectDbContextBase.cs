@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SF.Core.Abstraction;
 using SF.Core.Abstraction.Data;
 using SF.Entitys.Abstraction;
 using SF.Entitys;
 using System.Threading.Tasks;
 using System.Threading;
-using SF.Core.Extensions;
 using SF.Core;
-using SF.Core.Common;
 using SF.Data.Extensions;
 
 namespace SF.Data

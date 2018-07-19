@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore;
 using SF.Core.Abstraction.Interceptors;
-using System.Reflection;
 
 namespace SF.Core.Interceptors
 {

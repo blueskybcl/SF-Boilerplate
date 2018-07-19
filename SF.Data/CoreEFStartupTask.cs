@@ -3,8 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using SF.Entitys;
 using SF.Core.StartupTask;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace SF.Data

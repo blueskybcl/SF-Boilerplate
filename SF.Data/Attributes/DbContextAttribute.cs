@@ -1,6 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using System;
-
 namespace SF.Data
 {
     ///// <summary>

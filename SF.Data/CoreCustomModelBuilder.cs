@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using SF.Core.Abstraction.Data;
 using SF.Core.EFCore.Maps.Fluent;
 using SF.Entitys;
@@ -77,8 +76,8 @@ namespace SF.Data
             {
 
                 b.HasKey(ur => new { ur.UserId, ur.RoleId });
-                b.HasOne(ur => ur.Role).WithMany(r => r.Users).HasForeignKey(r => r.RoleId);
-                b.HasOne(ur => ur.User).WithMany(u => u.Roles).HasForeignKey(u => u.UserId);
+                //b.HasOne(ur => ur.Role).WithMany(r => r.Users).HasForeignKey(r => r.RoleId);
+                //b.HasOne(ur => ur.User).WithMany(u => u.Roles).HasForeignKey(u => u.UserId);
 
                 b.ToTable("Core_UserRole");
             });
@@ -203,10 +202,7 @@ namespace SF.Data
                 .HasForeignKey(x => x.SettingId);
 
             #endregion
-
-            
-
-
+			
             #region Site
             modelBuilder.Entity<SiteSettings>(entity =>
            {
@@ -356,8 +352,7 @@ namespace SF.Data
             });
 
             #endregion
-
-
+			
             // enable auto history
             modelBuilder.EnableAutoHistory();
 
