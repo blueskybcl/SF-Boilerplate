@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Microsoft.Extensions.DependencyModel;
-using System.Runtime.Loader;
 using SF.Core.Infrastructure.Plugins.Abstraction;
 
 namespace SF.Core.Infrastructure.Plugins
@@ -99,7 +98,7 @@ namespace SF.Core.Infrastructure.Plugins
 
                     if (!AlreadyLoaded(assemblyName))
                     {
-                        Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(dllPath);
+                        Assembly assembly = Assembly.LoadFrom(dllPath);
                         assemblies.Add(assembly);
                     }
                 }
@@ -134,7 +133,7 @@ namespace SF.Core.Infrastructure.Plugins
 
                     if (!AlreadyLoaded(assemblyName))
                     {
-                        Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(dllPath);
+                        Assembly assembly = Assembly.LoadFrom(dllPath);
                         assemblies.Add(assembly);
 
                         var pluginType = assembly.GetImplementationOrDefault<IPlugin>();
