@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using SF.Entitys.Abstraction;
-
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace SF.Entitys
 {
-    public class UserEntity : IdentityUser<long, IdentityUserClaim<long>, UserRoleEntity, IdentityUserLogin<long>>, IEntityWithTypedId<long>, IUserInfo, IHaveCreatedMeta, IHaveUpdatedMeta, IHaveDeletedMeta,IMustHaveSite
+    public class UserEntity : IdentityUser<long>, IEntityWithTypedId<long>, IUserInfo, IHaveCreatedMeta, IHaveUpdatedMeta, IHaveDeletedMeta,IMustHaveSite
     {
         public UserEntity()
         {
@@ -238,6 +237,5 @@ namespace SF.Entitys
         /// 备注
         /// </summary>		
         public string Description { get; set; }
-
-    }
+	}
 }

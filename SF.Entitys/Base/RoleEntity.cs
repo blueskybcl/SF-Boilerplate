@@ -4,10 +4,11 @@ using SF.Entitys.Abstraction;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using System;
+using Microsoft.AspNetCore.Identity;
 
 namespace SF.Entitys
 {
-    public class RoleEntity : IdentityRole<long, UserRoleEntity, IdentityRoleClaim<long>>, IEntityWithTypedId<long>
+    public class RoleEntity : IdentityRole<long>, IEntityWithTypedId<long>
     {
         public RoleEntity()
         {
